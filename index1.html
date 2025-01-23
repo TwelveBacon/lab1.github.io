@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вариант 16</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas:
+                "block1 block2"
+                "block3 block2"
+                "block4 block5";
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            height: 600px;
+        }
+
+        .block1 {
+            grid-area: block1;
+            background-color: #cce5ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #000;
+        }
+
+        .block2 {
+            grid-area: block2;
+            background-color: #e2f0d9;
+            border: 2px solid #000;
+        }
+
+        .block3 {
+            grid-area: block3;
+            background-color: #ffffff;
+            border: 2px solid #000;
+        }
+
+        .block4 {
+            grid-area: block4;
+            background-color: #cce5ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #000;
+        }
+
+        .block5 {
+            grid-area: block5;
+            background-color: #ffe6cc;
+            border: 2px solid #000;
+        }
+
+        h1, h2 {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        p {
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        li a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block1">
+            <h1>Магазин музичних товарів</h1>
+        </div>
+        <div class="block2">
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="offers.html">Спеціальні пропозиції</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="block3">
+            <p>Ми пропонуємо широкий асортимент музичних інструментів та обладнання. Гітари, клавішні, ударні установки, звукове обладнання та багато іншого чекають на вас!
+    Шукаєте щось особливе? Загляньте до нашого каталогу або скористайтеся фільтрами пошуку для зручного вибору.</p>
+        </div>
+        <div class="block4">
+            <h2>Дізнатися більше про новинки та акції!</h2>
+        </div>
+        <div class="block5">
+            <p>Контент 5</p>
+        </div>
+    </div>
+</body>
+</html>
